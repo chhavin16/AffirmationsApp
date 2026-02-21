@@ -1,0 +1,18 @@
+.App {
+  min-height: 100vh;
+  background-color: var(--ivory);
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 481px) {
+  .App {
+    box-shadow: var(--shadow-lg);
+    min-height: 100vh;
+  }
+
+  body {
+    background: var(--ivory-dark);
+  }
+}

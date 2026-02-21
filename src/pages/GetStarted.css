@@ -1,0 +1,230 @@
+.get-started-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--ivory) 0%, var(--green-lighter) 100%);
+}
+
+.get-started-container {
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+}
+
+.leaf-decoration {
+  position: absolute;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.leaf-decoration.top-left {
+  top: -20px;
+  left: -20px;
+}
+
+.leaf-decoration.top-right {
+  top: -20px;
+  right: -20px;
+}
+
+.get-started-content {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 48px 36px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.app-icon {
+  margin-bottom: 24px;
+}
+
+.get-started-content h1 {
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.commitment-card {
+  background: var(--ivory);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: left;
+  margin-bottom: 32px;
+  border: 1px solid var(--green-lighter);
+}
+
+.commitment-card h3 {
+  font-size: 18px;
+  color: var(--green-primary);
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+}
+
+.commitment-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.commitment-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.commitment-card ul li {
+  padding: 8px 0;
+  padding-left: 28px;
+  position: relative;
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.commitment-card ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+  background: var(--green-lighter);
+  border-radius: 50%;
+  border: 2px solid var(--green-light);
+}
+
+.commitment-card ul li::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 17px;
+  width: 8px;
+  height: 4px;
+  border-left: 2px solid var(--green-primary);
+  border-bottom: 2px solid var(--green-primary);
+  transform: rotate(-45deg);
+}
+
+.commitment-note {
+  font-style: italic;
+  color: var(--green-primary) !important;
+  font-size: 13px !important;
+}
+
+.get-started-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-primary {
+  background: var(--green-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary.btn-large {
+  padding: 16px 32px;
+  font-size: 17px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: var(--text-primary);
+}
+
+.btn-text {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 14px;
+  padding: 8px;
+  transition: color 0.2s ease;
+}
+
+.btn-text:hover {
+  color: var(--text-secondary);
+}
+
+/* Reject View */
+.reject-view {
+  text-align: center;
+}
+
+.reject-view .get-started-content {
+  padding: 48px 36px;
+}
+
+.reject-icon {
+  margin-bottom: 24px;
+}
+
+.reject-view h2 {
+  font-size: 24px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+.reject-message {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 48px 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+.reject-submessage {
+  color: var(--green-primary);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.reject-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.reject-actions .btn-primary {
+  width: 100%;
+  max-width: 280px;
+}

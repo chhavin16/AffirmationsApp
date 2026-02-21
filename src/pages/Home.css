@@ -1,0 +1,254 @@
+.home-page {
+  min-height: 100vh;
+  background: var(--ivory);
+  padding-bottom: 80px;
+}
+
+.home-header {
+  background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-light) 100%);
+  padding: 32px 24px 40px;
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.greeting-section h1 {
+  color: var(--white);
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.date-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.home-content {
+  padding: 0 20px;
+  margin-top: -20px;
+}
+
+/* Progress Card */
+.progress-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 24px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-header h3 {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.streak-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--ivory);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.progress-bar-container {
+  background: var(--green-lighter);
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, var(--green-primary), var(--green-light));
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  min-width: 0;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* Quick Actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.action-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px 16px;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.write-action .action-icon {
+  background: #e8f5e9;
+  color: var(--green-primary);
+}
+
+.record-action .action-icon {
+  background: #fff3e0;
+  color: #e67e22;
+}
+
+.track-action .action-icon {
+  background: #e3f2fd;
+  color: #2196f3;
+}
+
+.reminder-action .action-icon {
+  background: #fce4ec;
+  color: #e91e63;
+}
+
+.action-card h3 {
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.action-card p {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Recent Sections */
+.recent-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.see-all-link {
+  font-size: 14px;
+  color: var(--green-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.see-all-link:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.btn-small {
+  padding: 10px 20px;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.affirmation-list-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.affirmation-preview-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  border-left: 3px solid var(--green-primary);
+}
+
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--green-light);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.affirmation-preview-item p {
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Recordings Preview */
+.recordings-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recording-preview-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.recording-date {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-light);
+}

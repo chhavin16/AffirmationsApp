@@ -1,0 +1,221 @@
+.write-page {
+  min-height: 100vh;
+  background: var(--ivory);
+  padding-bottom: 80px;
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-light) 100%);
+  padding: 32px 24px;
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.page-header h1 {
+  color: var(--white);
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.write-content {
+  padding: 24px 20px;
+}
+
+.affirmation-form {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.input-group textarea {
+  width: 100%;
+  border: 1.5px solid var(--green-lighter);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+  background: var(--ivory-light);
+  color: var(--text-primary);
+}
+
+.input-group textarea:focus {
+  border-color: var(--green-primary);
+  background: var(--white);
+}
+
+.input-group textarea::placeholder {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.char-count {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.affirmations-list {
+  margin-top: 8px;
+}
+
+.affirmations-list h3 {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.empty-list {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-list p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.affirmation-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: var(--shadow-sm);
+  border-left: 3px solid var(--green-primary);
+}
+
+.affirmation-text {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.quote-icon {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--green-light);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.affirmation-text p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+.affirmation-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--ivory-dark);
+}
+
+.created-date {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ivory);
+  color: var(--text-secondary);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--green-lighter);
+  color: var(--green-primary);
+}
+
+.icon-btn.delete:hover {
+  background: #fce4ec;
+  color: #e74c3c;
+}
+
+/* Edit mode */
+.edit-mode textarea {
+  width: 100%;
+  border: 1.5px solid var(--green-primary);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  line-height: 1.5;
+  background: var(--ivory-light);
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+
+.btn-save {
+  background: var(--green-primary);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-save:hover {
+  background: var(--green-dark);
+}
+
+.btn-cancel {
+  background: var(--ivory);
+  color: var(--text-secondary);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.btn-cancel:hover {
+  background: var(--ivory-dark);
+}
